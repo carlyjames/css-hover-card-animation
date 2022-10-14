@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    height: max-content;
+    width: 100%;
+    background: url(https://images.pexels.com/photos/34504/soldier-dog-companion-service.jpg?auto=compress&cs=tinysrgb&w=600) center/cover;
+    display: grid;
+    background: linear-gradient(to top right,black,rgba(0, 0, 17, 0.848)),url(https://images.pexels.com/photos/7468223/pexels-photo-7468223.jpeg?auto=compress&cs=tinysrgb&w=600) center/cover;
+    background-repeat: no-repeat;
+    grid-template-columns: 0fr 0fr 0fr;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.card_holder{
+    height: max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 1s;
+}
+.face1{
+    background: url(https://images.pexels.com/photos/3706709/pexels-photo-3706709.jpeg?auto=compress&cs=tinysrgb&w=600) center/cover;
+    height: 200px;
+    width: 300px;
+    transform: translateY(100px);
+    z-index: 1;
+    transition: all 1s;
+    
+}
+/* .face1:hover{
+    transform: translate(0);
+} */
+.card_holder:hover .face1{
+    transform: translate(0);
+}
+.card_holder:hover .face2{
+    transform: translateY(0);
+    border-radius: 0px;
+}
+
+.face2{
+    height: 200px;
+    width: 300px;
+    position: relative;
+    background: rgb(34, 33, 33);
+    color: white;
+    display: flex;
+    transform: translateY(-100px);
+    transition: all 1s;
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.623);
+
+}
+
+.face2 .content{
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+}
+
+.face2 button{
+    height: 40px;
+    width: 120px;
+    background:  #3d3393;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.face2 a{
+    text-decoration: none;
+    font-size: 1px;
+}
+.face1 h1{
+    text-align: center;
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background: rgb(0, 0, 35);
+    color: white;
+    bottom: 0;
+    font-weight: 500;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+}
+#face2{
+    background: url(https://images.pexels.com/photos/2415939/pexels-photo-2415939.jpeg?auto=compress&cs=tinysrgb&w=600g) center/cover;
+}
+#face3{
+    background: url(https://images.pexels.com/photos/2859054/pexels-photo-2859054.jpeg?auto=compress&cs=tinysrgb&w=600) center/cover;
+
+}
+#face4{
+    background: url(https://images.pexels.com/photos/280010/pexels-photo-280010.jpeg?auto=compress&cs=tinysrgb&w=600) center/cover;
+
+}
+b{
+    color:#2b76b9;
+}
+/* b{
+    color: grey;
+} */
+@media (max-width: 700px) {
+    .container{
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+}
